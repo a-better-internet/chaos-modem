@@ -3,25 +3,14 @@
 
   <head>
     <meta charset="UTF-8">
-    <title>Chaos Modem v3</title>
-    <link rel="stylesheet" href="./style.css">
-
-  </head>
-    
-  <body>
-  <html lang="en">
-
-  <head>
-    <meta charset="UTF-8">
     <title>Chaos Modem</title>
     <link rel="stylesheet" href="./style.css">
-
   </head>
-    
+
   <body>
   <div class="win95" id="app">
   <div class="titlebar">
-    <div class="aol-logo">America Online • <em>Modem Texture Mixer (4-Ch)</em></div>
+    <div class="aol-logo">America Online &bull; <em>Modem Texture Mixer (4-Ch)</em></div>
     <div>
       <button class="tb-btn danger" id="btnStop" disabled>Stop</button>
       <button class="tb-btn" id="btnStart" disabled>Start</button>
@@ -35,7 +24,7 @@
         <h4>Sample Library</h4>
         <div class="meter-wrap">
           <div style="display:flex;justify-content:space-between;font-size:12px;">
-            <span id="libCount">Loading…</span>
+            <span id="libCount">Loading&hellip;</span>
             <span id="libState">PRELOADING</span>
           </div>
           <div style="height:10px;border:2px inset #cdd5de;background:#fff;margin-top:6px;">
@@ -66,7 +55,7 @@
         <h4>Transport</h4>
         <button class="side-btn" id="btnPanic" disabled>Audio Panic (Silence All)</button>
         <div style="font-size:12px;color:#365b8d;margin-top:6px;">
-          Tip: Start → then toggle channels, adjust pitch/density for movement.
+          Tip: Start &rarr; then toggle channels, adjust pitch/density for movement.
         </div>
       </div>
     </aside>
@@ -93,7 +82,6 @@
             <input type="range" id="sliceMax" min="0.2" max="10" step="0.1" value="3.2">
           </label>
         </div>
-      
         <div class="toolbar-group">
           <label>Tempo (BPM)
             <input type="number" id="bpm" min="20" max="300" step="1" value="90">
@@ -126,8 +114,6 @@
             </select>
           </label>
         </div>
-
-
         <div class="toolbar-group">
           <label>Grain Size (ms)
             <input type="range" id="grainMs" min="20" max="200" step="1" value="90">
@@ -138,9 +124,10 @@
             <input type="range" id="overlap" min="0" max="0.95" step="0.05" value="0.5">
           </label>
         </div>
+      </div>
 
       <section class="welcome" id="chGrid">
-        <!-- Channel Cards -->
+        <!-- Channel 1 -->
         <div class="card ch" data-ch="0">
           <h3>Channel 1</h3>
           <div class="row">
@@ -150,12 +137,11 @@
             <label>Volume <input type="range" class="ch-vol" min="0" max="1" step="0.001" value="0.9"></label>
           </div>
           <div class="row">
-            <label>Pitch (±12st) <input type="range" class="ch-pitch" min="-12" max="12" step="0.01" value="-2"></label>
+            <label>Pitch (&plusmn;12st) <input type="range" class="ch-pitch" min="-12" max="12" step="0.01" value="-2"></label>
           </div>
           <div class="row">
             <label>Density <input type="range" class="ch-density" min="0" max="1" step="0.001" value="0.65"></label>
           </div>
-          
           <div class="row">
             <label>Stretch
               <input type="checkbox" class="ch-stretch-en" />
@@ -163,42 +149,15 @@
               <span class="mini">(<span class="ch-stretch-val">100</span>%)</span>
             </label>
           </div>
-    
-          
-          <div class="row">
-            <label>Stretch
-              <input type="checkbox" class="ch-stretch-en" />
-              <input type="range" class="ch-stretch" min="50" max="200" step="1" value="100">
-              <span class="mini">(<span class="ch-stretch-val">100</span>%)</span>
-            </label>
-          </div>
-    
-          
-          <div class="row">
-            <label>Stretch
-              <input type="checkbox" class="ch-stretch-en" />
-              <input type="range" class="ch-stretch" min="50" max="200" step="1" value="100">
-              <span class="mini">(<span class="ch-stretch-val">100</span>%)</span>
-            </label>
-          </div>
-    
-          
-          <div class="row">
-            <label>Stretch
-              <input type="checkbox" class="ch-stretch-en" />
-              <input type="range" class="ch-stretch" min="50" max="200" step="1" value="100">
-              <span class="mini">(<span class="ch-stretch-val">100</span>%)</span>
-            </label>
-          </div>
-    
           <div class="row">
             <button class="side-btn ch-solo">Solo</button>
             <button class="side-btn ch-mute">Mute</button>
             <button class="side-btn ch-next">Next Sample Now</button>
           </div>
-          <div class="mini">Now Playing: <span class="nowplaying">—</span></div>
+          <div class="mini">Now Playing: <span class="nowplaying">&mdash;</span></div>
         </div>
 
+        <!-- Channel 2 -->
         <div class="card ch" data-ch="1">
           <h3>Channel 2</h3>
           <div class="row">
@@ -208,12 +167,11 @@
             <label>Volume <input type="range" class="ch-vol" min="0" max="1" step="0.001" value="0.8"></label>
           </div>
           <div class="row">
-            <label>Pitch (±12st) <input type="range" class="ch-pitch" min="-12" max="12" step="0.01" value="0"></label>
+            <label>Pitch (&plusmn;12st) <input type="range" class="ch-pitch" min="-12" max="12" step="0.01" value="0"></label>
           </div>
           <div class="row">
             <label>Density <input type="range" class="ch-density" min="0" max="1" step="0.001" value="0.55"></label>
           </div>
-          
           <div class="row">
             <label>Stretch
               <input type="checkbox" class="ch-stretch-en" />
@@ -221,42 +179,15 @@
               <span class="mini">(<span class="ch-stretch-val">100</span>%)</span>
             </label>
           </div>
-    
-          
-          <div class="row">
-            <label>Stretch
-              <input type="checkbox" class="ch-stretch-en" />
-              <input type="range" class="ch-stretch" min="50" max="200" step="1" value="100">
-              <span class="mini">(<span class="ch-stretch-val">100</span>%)</span>
-            </label>
-          </div>
-    
-          
-          <div class="row">
-            <label>Stretch
-              <input type="checkbox" class="ch-stretch-en" />
-              <input type="range" class="ch-stretch" min="50" max="200" step="1" value="100">
-              <span class="mini">(<span class="ch-stretch-val">100</span>%)</span>
-            </label>
-          </div>
-    
-          
-          <div class="row">
-            <label>Stretch
-              <input type="checkbox" class="ch-stretch-en" />
-              <input type="range" class="ch-stretch" min="50" max="200" step="1" value="100">
-              <span class="mini">(<span class="ch-stretch-val">100</span>%)</span>
-            </label>
-          </div>
-    
           <div class="row">
             <button class="side-btn ch-solo">Solo</button>
             <button class="side-btn ch-mute">Mute</button>
             <button class="side-btn ch-next">Next Sample Now</button>
           </div>
-          <div class="mini">Now Playing: <span class="nowplaying">—</span></div>
+          <div class="mini">Now Playing: <span class="nowplaying">&mdash;</span></div>
         </div>
 
+        <!-- Channel 3 -->
         <div class="card ch" data-ch="2">
           <h3>Channel 3</h3>
           <div class="row">
@@ -266,12 +197,11 @@
             <label>Volume <input type="range" class="ch-vol" min="0" max="1" step="0.001" value="0.85"></label>
           </div>
           <div class="row">
-            <label>Pitch (±12st) <input type="range" class="ch-pitch" min="-12" max="12" step="0.01" value="3"></label>
+            <label>Pitch (&plusmn;12st) <input type="range" class="ch-pitch" min="-12" max="12" step="0.01" value="3"></label>
           </div>
           <div class="row">
             <label>Density <input type="range" class="ch-density" min="0" max="1" step="0.001" value="0.5"></label>
           </div>
-          
           <div class="row">
             <label>Stretch
               <input type="checkbox" class="ch-stretch-en" />
@@ -279,42 +209,15 @@
               <span class="mini">(<span class="ch-stretch-val">100</span>%)</span>
             </label>
           </div>
-    
-          
-          <div class="row">
-            <label>Stretch
-              <input type="checkbox" class="ch-stretch-en" />
-              <input type="range" class="ch-stretch" min="50" max="200" step="1" value="100">
-              <span class="mini">(<span class="ch-stretch-val">100</span>%)</span>
-            </label>
-          </div>
-    
-          
-          <div class="row">
-            <label>Stretch
-              <input type="checkbox" class="ch-stretch-en" />
-              <input type="range" class="ch-stretch" min="50" max="200" step="1" value="100">
-              <span class="mini">(<span class="ch-stretch-val">100</span>%)</span>
-            </label>
-          </div>
-    
-          
-          <div class="row">
-            <label>Stretch
-              <input type="checkbox" class="ch-stretch-en" />
-              <input type="range" class="ch-stretch" min="50" max="200" step="1" value="100">
-              <span class="mini">(<span class="ch-stretch-val">100</span>%)</span>
-            </label>
-          </div>
-    
           <div class="row">
             <button class="side-btn ch-solo">Solo</button>
             <button class="side-btn ch-mute">Mute</button>
             <button class="side-btn ch-next">Next Sample Now</button>
           </div>
-          <div class="mini">Now Playing: <span class="nowplaying">—</span></div>
+          <div class="mini">Now Playing: <span class="nowplaying">&mdash;</span></div>
         </div>
 
+        <!-- Channel 4 -->
         <div class="card ch" data-ch="3">
           <h3>Channel 4</h3>
           <div class="row">
@@ -324,12 +227,11 @@
             <label>Volume <input type="range" class="ch-vol" min="0" max="1" step="0.001" value="0.75"></label>
           </div>
           <div class="row">
-            <label>Pitch (±12st) <input type="range" class="ch-pitch" min="-12" max="12" step="0.01" value="-5"></label>
+            <label>Pitch (&plusmn;12st) <input type="range" class="ch-pitch" min="-12" max="12" step="0.01" value="-5"></label>
           </div>
           <div class="row">
             <label>Density <input type="range" class="ch-density" min="0" max="1" step="0.001" value="0.6"></label>
           </div>
-          
           <div class="row">
             <label>Stretch
               <input type="checkbox" class="ch-stretch-en" />
@@ -337,62 +239,28 @@
               <span class="mini">(<span class="ch-stretch-val">100</span>%)</span>
             </label>
           </div>
-    
-          
-          <div class="row">
-            <label>Stretch
-              <input type="checkbox" class="ch-stretch-en" />
-              <input type="range" class="ch-stretch" min="50" max="200" step="1" value="100">
-              <span class="mini">(<span class="ch-stretch-val">100</span>%)</span>
-            </label>
-          </div>
-    
-          
-          <div class="row">
-            <label>Stretch
-              <input type="checkbox" class="ch-stretch-en" />
-              <input type="range" class="ch-stretch" min="50" max="200" step="1" value="100">
-              <span class="mini">(<span class="ch-stretch-val">100</span>%)</span>
-            </label>
-          </div>
-    
-          
-          <div class="row">
-            <label>Stretch
-              <input type="checkbox" class="ch-stretch-en" />
-              <input type="range" class="ch-stretch" min="50" max="200" step="1" value="100">
-              <span class="mini">(<span class="ch-stretch-val">100</span>%)</span>
-            </label>
-          </div>
-    
           <div class="row">
             <button class="side-btn ch-solo">Solo</button>
             <button class="side-btn ch-mute">Mute</button>
             <button class="side-btn ch-next">Next Sample Now</button>
           </div>
-          <div class="mini">Now Playing: <span class="nowplaying">—</span></div>
+          <div class="mini">Now Playing: <span class="nowplaying">&mdash;</span></div>
         </div>
       </section>
 
       <div class="card">
         <div style="display:flex;justify-content:space-between;align-items:center;">
           <div>
-            <strong>Status:</strong> <span id="status">Waiting for library…</span>
+            <strong>Status:</strong> <span id="status">Waiting for library&hellip;</span>
           </div>
           <div class="date" id="clock"></div>
         </div>
-          <div class="mini" id="sliceModeHint" style="margin-top:6px;color:#365b8d;">Slice mode: Free (seconds)</div>
+        <div class="mini" id="sliceModeHint" style="margin-top:6px;color:#365b8d;">Slice mode: Free (seconds)</div>
       </div>
     </main>
   </div>
 </div>
-    <script  src="./script.js"></script>
-
+  <script src="./script.js"></script>
   </body>
-  
-</html>
-    <script  src="./script.js"></script>
 
-  </body>
-  
 </html>
